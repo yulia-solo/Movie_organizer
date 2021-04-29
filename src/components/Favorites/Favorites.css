@@ -17,6 +17,21 @@
     margin-bottom: 24px;
 }
 
+.favorite_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.removing_button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .favorites__save {
     border: none;
     background-color: #496DDB;
@@ -30,4 +45,17 @@
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
+}
+
+.favorites__save:hover:not(:disabled) {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    background-color: #FFEEDB;
+    color: rgba(0, 8, 7);
+}
+
+.favorites__save:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
