@@ -9,7 +9,7 @@ class Movies extends Component {
     render() { 
         if (!this.props.movies) {
             return (
-                <p>Мы ничего не нашли. Попробуйте еще раз</p>
+                <p>We didn't find anything. Please try again</p>
             )
         } 
         return ( 

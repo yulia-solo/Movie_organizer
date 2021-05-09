@@ -1,13 +1,11 @@
 
-
-  const initialState = {
+const initialState = {
       movies: [],
       apiKey: '7d2f85fd',
       searchLine: '', 
-      favoritesTitle: 'Новый список',
+      favoritesTitle: 'New list',
       favoritesMovies: [],
       idList: '',
-
     }
   
 

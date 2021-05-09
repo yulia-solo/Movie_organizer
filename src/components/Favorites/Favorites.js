@@ -29,7 +29,7 @@ class Favorites extends Component {
                         return <li className="favorite_item" key={item.imdbID} >{item.title} ({item.year}) {!this.props.idList && <button className="removing_button" data-id={item.imdbID} onClick={this.removeFilmHandler}>X</button>}</li>;
                     })}
                 </ul>
-                {!this.props.idList && <button type="button" className="favorites__save" disabled={!this.props.favoritesTitle || !this.props.favoritesMovies} onClick={this.saveListHandler} >Сохранить список</button>} 
+                {!this.props.idList && <button type="button" className="favorites__save" disabled={!this.props.favoritesTitle || !this.props.favoritesMovies} onClick={this.saveListHandler} >Save a list</button>} 
                 {this.props.idList && <a href={`/list/${this.props.idList}`} target="_blank" >{this.props.favoritesTitle}</a>} 
 
             </div>
@@ -53,3 +53,4 @@ const mapStateToProps = (state) => {
 
 
   export default connect(mapStateToProps, mapDispatchToProps)(Favorites);
+  
